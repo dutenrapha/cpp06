@@ -6,7 +6,7 @@
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/16 16:11:42 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/03/16 16:42:52 by rdutenke         ###   ########.fr       */
+/*   Updated: 2022/03/16 16:46:46 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,16 +54,5 @@ void identify(Base* p)
 
 void identify(Base& p)
 {
-	if (dynamic_cast<A*>(&p))
-	{
-		std::cout << "A\n" << std::endl;
-	}
-	else if (dynamic_cast<B*>(&p))
-	{
-		std::cout << "B\n" << std::endl;
-	}
-	else if (dynamic_cast<C*>(&p))
-	{
-		std::cout << "C\n" << std::endl;
-	}
+	identify(&p);
 }
