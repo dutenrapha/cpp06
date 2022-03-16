@@ -6,7 +6,7 @@
 /*   By: rdutenke <rdutenke@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 16:02:55 by rdutenke          #+#    #+#             */
-/*   Updated: 2022/03/16 13:25:45 by rdutenke         ###   ########.fr       */
+/*   Updated: 2022/03/16 20:18:06 by rdutenke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 int main(int argc, char **argv)
 {
 	if (argc != 2)
+	{
 		std::cout << "Error" << std::endl;
+		return (0);
+	}
 	try
 	{
 		Value value(argv[1]);
